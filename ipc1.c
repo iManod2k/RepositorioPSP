@@ -65,10 +65,10 @@ int main()
 	pid = fork();
 	
 		if(pid==0){
+			wait(NULL);
 			hijo();
 		}else {
 			padre();
-			wait(NULL);
 		}
 
 }
