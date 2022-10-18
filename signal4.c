@@ -35,6 +35,8 @@ int main()
 		pause();
           break;    
      default: //PADRE
+		//El Sleep solucionó el Error
+		sleep(1);
      		kill(pid_hijo,SIGUSR1);
           break;
   } 
